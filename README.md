@@ -1,4 +1,4 @@
-# Shipwire Terraform Module
+# Terraform Module
 
 This repo contains [Terraform](https://www.terraform.io/?_ga=2.87211550.783776628.1583200684-1012764625.1583200684) modules for building various resources on [Google Cloud Platform (GCP)](https://cloud.google.com/)
 
