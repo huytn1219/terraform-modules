@@ -17,7 +17,7 @@ Thid module supports creating:
 ## Inputs
 | Name | Description | Type | Default | Required | Example |
 | ---- | ----------- | ---- | ------- | -------- | ------- |
-| project | The name of the GCP Project where all resources will be launched. | string| No | Yes | shipwire-eng-core-dev |
+| project | The name of the GCP Project where all resources will be launched. | string| No | Yes |  |
 | name | Name of the custom service account. This parameter is limited to a maximum of 28 characters. | string | No | Yes | terraform-test-gke |
 | description |  The description of the custom service account. | string | "" | No | N/A |
 | service_account_roles | Additional roles to be added to the service account. | list(string) | [] | No | N/A |  
