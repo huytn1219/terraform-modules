@@ -6,8 +6,8 @@ This repo contains [Terraform](https://www.terraform.io/?_ga=2.87211550.78377662
 
 This repo has the following folder structure:
 
-* [root]: The root folder contains the main implementation code for the modules, broken down into multiple standalone submodules.
-* [test]: Automated tests for the submodules and examples. TODO
+* root: The root folder contains the main implementation code for the modules, broken down into multiple standalone submodules.
+* test: Automated tests for the submodules and examples. TODO
 
 ## What's a Module?
 
