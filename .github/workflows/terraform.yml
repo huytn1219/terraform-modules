@@ -76,7 +76,7 @@ jobs:
       run: terraform fmt -check
 
     - name: Authenticate GCP Terraform
-      run: gcloud auth application-default login --client-id-file ${{ GCP_ACCESS_TOKEN }}
+      run: "gcloud auth application-default login --client-id-file ${{ GCP_ACCESS_TOKEN }}"
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan
