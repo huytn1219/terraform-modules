@@ -68,8 +68,8 @@ jobs:
     - name: Copy files
       uses: canastro/copy-file-action@master
       with:
-        source: ${{ secrets.GCP_ACCESS_TOKEN }}
-        target: /tmp/access_token.json   
+        source: "${{ secrets.GCP_ACCESS_TOKEN }}"
+        target: "/tmp/access_token.json"  
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
