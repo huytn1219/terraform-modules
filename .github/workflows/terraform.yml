@@ -65,11 +65,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
-    - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v1
+    - name: Authenticate GCP
+      uses: actions-hub/gcloud@master
+      env: 
+        PROJECT_ID: summer-monument-301402
+        APPLICATION_CREDENTIALS: ${{ secrets.GCP_ACCESS_TOKEN }}
       with:
-        cli_config_credentials_token: ${{ secrets.GCP_ACCESS_TOKEN }}
+        args: info 
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
