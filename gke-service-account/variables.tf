@@ -11,7 +11,7 @@ variable "project" {
 variable "name" {
     description = "The name of the custom service account. This parameter is limited to a maximum of 28 characters."
     type        = string
-    default     = "test-svc-vr43"
+    default     = "test-svc-4"
 }
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
