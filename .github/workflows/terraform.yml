@@ -77,11 +77,11 @@ jobs:
     - name: Terraform Format
       run: terraform fmt -check
 
-    - name: Authenticate GCP Terraform
-      run: "gcloud auth application-default login --client-id-file ${{ GCP_ACCESS_TOKEN }}"
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan
+      env:
+        GOOGLE_CREDENTIALS: ${{ GCP_ACCESS_TOKEN }}
       working-directory: gke-service-account
 
       # On push to master, build or change infrastructure according to Terraform configuration files
