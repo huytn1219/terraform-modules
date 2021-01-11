@@ -78,7 +78,7 @@ jobs:
       run: terraform fmt -check
 
     # Generates an execution plan for Terraform
-    - name: Terraform Plan
+    - name: Terraform Plan s
       run: terraform plan
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GCP_ACCESS_TOKEN }}
