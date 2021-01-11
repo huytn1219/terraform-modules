@@ -65,7 +65,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Authenticate GCP
+    - name: Authenticate GCPa
       uses: actions-hub/gcloud@master
       env: 
         PROJECT_ID: summer-monument-301402
