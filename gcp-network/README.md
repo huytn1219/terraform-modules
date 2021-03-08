@@ -22,7 +22,7 @@ This module supports creating:
 ## Inputs
 | Name | Description | Type | Default | Required | Example |
 | ---- | ----------- | ---- | ------- | -------- | ------- |
-| project | The project ID for the network. | string | No| Yes| shipwire-eng-core-dev|
+| project | The project ID for the network. | string | No| Yes| dev|
 | region | The region for subnetworks in the network. | string | No| Yes| us-central1 |
 | name_prefix | A name prefix used in resource names to ensure uniqueness across a project.| string | No | Yes| test-network|
 | cidr_block | The IP address range of the VPC in CIDR notation. A prefix of /16 is recommended. Do not use a prefix higher than /27.| string | 10.5.0.0/16| No | N/A|
