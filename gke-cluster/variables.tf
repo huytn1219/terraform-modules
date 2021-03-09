@@ -141,7 +141,7 @@ variable "maintenance_start_time" {
 variable "gsuite_domain_name" {
   description = "The domain name for use with Google security groups in Kubernetes RBAC. If a value is provided, the cluster will be initialized with security group `gke-security-groups@[yourdomain.com]`."
   type        = string
-  default     = "shipwire.com"
+  default     = ""
 }
 
 
